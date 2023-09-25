@@ -46,10 +46,12 @@ body {
     background-color: #1d1f20;
     background-image:url("bgbook.jpg");
     Background-repeat: no-repeat;
-    background-size: 1375px 950px;	
+    background-size: 1375px 900px;	
     color: #e5e5e5;
     font: 16px/1.25 'Crimson Text', sans-serif;
     margin-left: 25px;
+    margin-top: 19px;
+
 
 }
 
@@ -63,7 +65,7 @@ body {
     float: left;
     padding: 0em;
     width: 1385px;
-    Margin-top:10px;
+    Margin-top:50px;
 }
 
 
