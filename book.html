@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="turn.min.js"></script>
+<link rel="stylesheet" href="book.css">
+
+<style type="text/css">
+#magazine{
+	width: 1252px;
+	height:980px;
+	padding-top:5em;
+	
+}
+
+#magazine .turn-page{
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+</style>
+</head>
+
+<div id="wrapper">
+
+    <div id="container">
+        <section class="open-book">
+            <header>
+                <h1></h1>
+                <h6></h6>
+           
+          
+<body>
+<dd>
+<div id="magazine">
+        <div style="background-image:url(pages/00.jpg);"></div>
+	<div style="background-image:url(pages/01.jpg);"></div>
+	<div style="background-image:url(pages/02.jpg);"></div>
+	<div style="background-image:url(pages/03.jpg);"></div>
+	<div style="background-image:url(pages/04.jpg);"></div>
+	<div style="background-image:url(pages/05.jpg);"></div>
+	<div style="background-image:url(pages/06.jpg);"></div>
+</div>
+</dd>
+ </header>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+
+
+<script type="text/javascript">
+
+	$(window).ready(function() {
+		$('#magazine').turn({
+							display: 'double',
+							acceleration: true,
+							gradients: !$.isTouch,
+							elevation:50,
+							when: {
+								turned: function(e, page) {
+									/*console.log('Current view: ', $(this).turn('view'));*/
+								}
+							}
+						});
+	});
+	
+	
+	$(window).bind('keydown', function(e){
+		
+		if (e.keyCode==37)
+			$('#magazine').turn('previous');
+		else if (e.keyCode==39)
+			$('#magazine').turn('next');
+			
+	});
+
+</script>
+
+</body>
+</html>
