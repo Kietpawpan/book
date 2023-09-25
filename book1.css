@@ -33,6 +33,18 @@
 
 }
 
+.open-page:after {
+	background: linear-gradient(to right, transparent 100%,rgba(0,0,0,0.2) 46%,rgba(0,0,0,0.5) 49%,rgba(0,0,0,0.6) 50%,rgba(0,0,0,0.5) 51%,rgba(0,0,0,0.2) 52%,transparent 100%);
+        bottom: -1em;
+        content: '';
+        left: 50%;
+        position: absolute;
+        top: -1em;
+        transform: translate(-50%,0);
+        width: 4em;
+        z-index: 1;
+}
+
 /* Numbered lists like 1, 1.1, 2.2.1... */
 /*
 .open-book article ol li {display:block;} /* hide original list counter */ 
@@ -42,11 +54,16 @@
 .open-book article ol > li:before {content:counters(item, ".") ". "; position: absolute; margin-right: 100%; right: 10px;} /* print counter */
 
 
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
 body {
     background-color: #1d1f20;
     background-image:url("bgbook.jpg");
     Background-repeat: no-repeat;
-    background-size: 1375px 900px;	
+    background-size: 1365px 900px;	
     color: #e5e5e5;
     font: 16px/1.25 'Crimson Text', sans-serif;
     margin-left: 25px;
