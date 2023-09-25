@@ -46,7 +46,7 @@ body {
     background-color: #1d1f20;
     color: #e5e5e5;
     font: 16px/1.25 'Crimson Text', sans-serif;
-    margin-left: 25px;
+    margin-left: 10px;
 
 }
 
@@ -58,7 +58,8 @@ body {
 #container {
     float: left;
     padding: 1em;
-    width: 1385px;
+    width: 1390px;
+    height:1400px;
 }
 
 
@@ -88,7 +89,7 @@ background: rgba(222,255,0,0.75);
 
 /* Header/Footer */
 .open-book header {
-    padding-bottom: -15em;
+    padding-bottom: -20em;
 }
 
 .open-book header *,
