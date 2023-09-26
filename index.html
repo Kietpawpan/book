@@ -15,35 +15,34 @@
 <link 	rel="stylesheet" 
 		href="book1.css">
 
+
+
+</head>
+
 <style type="text/css">
-
-#magazine{
-	width: 1252px;
-	height:980px;
-	padding-top:5em;
-	
+body{
+	background:#ccc;
 }
-
+#magazine{
+	width:576px;
+	height:400px;
+}
 #magazine .turn-page{
+	background-color:#ccc;
 	background-size:100% 100%;
 }
 </style>
-
 </head>
-<body>  
-<dd>
+<body>
+
 <div id="magazine">
-     <div style="background-image:url(pages/00.jpg);"></div>
+	<div style="background-image:url(pages/00.jpg);"></div>
 	<div style="background-image:url(pages/01.jpg);"></div>
 	<div style="background-image:url(pages/02.jpg);"></div>
-	<div style="background-image:url(pages/03.jpg);"></div>
 	<div style="background-image:url(pages/04.jpg);"></div>
 	<div style="background-image:url(pages/05.jpg);"></div>
 	<div style="background-image:url(pages/06.jpg);"></div>
 </div>
-</dd>
-
-
 
 
 <script type="text/javascript">
@@ -53,7 +52,7 @@
 							display: 'double',
 							acceleration: true,
 							gradients: !$.isTouch,
-							elevation:0,
+							elevation:50,
 							when: {
 								turned: function(e, page) {
 									/*console.log('Current view: ', $(this).turn('view'));*/
@@ -73,6 +72,9 @@
 	});
 
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
