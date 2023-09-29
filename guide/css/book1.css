@@ -118,7 +118,7 @@ body {
 }
 
 .open-book article *:not(.chapter-title):not(hr):not(dl) {
-    margin: 0 auto;
+    margin: 0;
     max-width: 28.125em;
 }
 
